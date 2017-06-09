@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <!--<constant name="struts.devMode" value="false"/>-->
+    <!--<package name="default" namespace="/" extends="default">
+        <action name="maven">
+            <result name="success">
+                success.html
+            </result>
+        </action>
+    </package>-->
+    <package name="default">
+        <action name="maven" class="cn.hdlmx.controller.MavenAction" method="maven">
+            <result name="success">
+                success.html
+            </result>
+        </action>
+    </package>
+</struts>
